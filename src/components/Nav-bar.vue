@@ -7,6 +7,9 @@
       <router-link  to="/Map" class="nav-link">여행지 계획</router-link>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">공지사항</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="#scrollspyHeading2">여행 게시판</a>
     </li>
     <li class="nav-item">
