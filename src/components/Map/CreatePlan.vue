@@ -30,8 +30,10 @@
 
     <!-- 검색 버튼 -->
     <button @click="submitSelection">검색</button>
+
+   <button @click.prevent="create">계획 생성하기</button>
   </div>
-  
+
   <div id="map-container">
     <div id="map"></div>
   </div>
@@ -65,6 +67,10 @@ export default {
   }, methods: {
     submitSelection() {
       console.log(this.selected);
+    },
+    create() {
+      alert("여행계획이 생성되었습니다.");
+      this.$router.push('/Map');
     }
   }
 

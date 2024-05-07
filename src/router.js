@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-import Map from './components/Map.vue';
-import Login from './components/LoginModal.vue'
+import Map from './components/Map/BoardPlan.vue';
+import Login from './components/LoginModal.vue';
+import CreatePlan from './components/Map/CreatePlan';
 
 const routes = [
   {
@@ -12,6 +13,9 @@ const routes = [
   }, {
     path: "/login",
     component : Login,
+  }, {
+    path: "/createPlan",
+    component : CreatePlan,
   }
 ];
 
