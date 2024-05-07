@@ -43,7 +43,8 @@ export default {
   methods: {
   login() {
     console.log('로그인 시도:', this.credentials);
-    if (this.credentials.username === 'ssafy' && this.credentials.password === '1234') {
+      if (this.credentials.username === 'ssafy' && this.credentials.password === '1234') {
+      alert('김싸피님 안녕하세요.')
       this.$store.commit('setLoginState', true); // Vuex 상태 업데이트
       this.$router.push('/'); // vue-router를 사용한 경로 이동
     } else {
