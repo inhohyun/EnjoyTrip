@@ -11,6 +11,14 @@ const store = createStore({
     setLoginState(state, status) {
       state.isLoggedIn = status;
     }
+  },
+  actions: {
+    logIn({ commit }) {
+      commit('setLoginState', true);
+    },
+    logOut({ commit }) {
+      commit('setLoginState', false);
+    }
   }
 })
 
