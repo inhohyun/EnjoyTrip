@@ -34,16 +34,23 @@ export default {
       credentials: {
         username: '',
         password: ''
-      }
+      },
+      isSuccess: false,
+
     };
   },
   methods: {
-    login() {
-      // 여기에 로그인 로직을 구현합니다.
-      console.log('로그인 시도:', this.credentials);
-      // 예를 들어 API 호출 등
+  login() {
+    console.log('로그인 시도:', this.credentials);
+    if (this.credentials.username === 'ssafy' && this.credentials.password === '1234') {
+      this.$loginStore.commit('setLoginState', true); // Vuex 상태 업데이트
+      this.$router.push('/'); // vue-router를 사용한 경로 이동
+    } else {
+      alert('아이디 혹은 비밀번호가 틀렸습니다.');
     }
   }
+}
+
 
 }
 </script>

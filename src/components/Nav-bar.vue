@@ -4,19 +4,19 @@
   <router-link to="/" class="navbar-brand">EnjoyTrip</router-link>
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <router-link  to="/Map" class="nav-link">여행지 계획</router-link>
+      <router-link  to="/map" class="nav-link">여행지 계획</router-link>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">공지사항</a>
+      <router-link  to="/" class="nav-link">공지사항</router-link>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">여행 게시판</a>
+      <router-link  to="/" class="nav-link">여행 게시판</router-link>
     </li>
     <li class="nav-item">
       <router-link  to="/login" class="nav-link">로그인</router-link>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">회원가입</a>
+      <router-link  to="/" class="nav-link">회원가입</router-link>
     </li>
   
   </ul>
