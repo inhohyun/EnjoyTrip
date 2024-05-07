@@ -29,6 +29,7 @@
 
 <script>
 export default {
+  
     data() {
     return {
       credentials: {
@@ -43,7 +44,7 @@ export default {
   login() {
     console.log('로그인 시도:', this.credentials);
     if (this.credentials.username === 'ssafy' && this.credentials.password === '1234') {
-      this.$loginStore.commit('setLoginState', true); // Vuex 상태 업데이트
+      this.$store.commit('setLoginState', true); // Vuex 상태 업데이트
       this.$router.push('/'); // vue-router를 사용한 경로 이동
     } else {
       alert('아이디 혹은 비밀번호가 틀렸습니다.');

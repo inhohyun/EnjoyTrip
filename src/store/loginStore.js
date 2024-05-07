@@ -1,16 +1,17 @@
-// store.js
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex'
 
-Vue.use(Vuex);
+const store = createStore({
 
-export default new Vuex.Store({
-  state: {
-    isLoggedIn: false
+  state() {
+    return {
+      isLoggedIn: false,
+    }
   },
   mutations: {
     setLoginState(state, status) {
       state.isLoggedIn = status;
     }
   }
-});
+})
+
+export default store;

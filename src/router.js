@@ -5,7 +5,7 @@ import Login from './components/LoginModal.vue'
 
 const routes = [
   {
-    path: "/Map",
+    path: "/map",
     component: Map,
 
     

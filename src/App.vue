@@ -1,8 +1,7 @@
 <template>
-
-
+  <!--상단 nav-bar-->
   <Navbar/>
-
+  <!--라우터로 설정한 컴포넌트들-->
   <router-view></router-view>  
 
 </template>
