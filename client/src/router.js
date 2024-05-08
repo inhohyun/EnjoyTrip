@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import Map from './components/Map/BoardPlan.vue';
-import Login from './components/LoginModal.vue';
+import Login from './components/Login/LoginModal.vue';
 import CreatePlan from './components/Map/CreatePlan';
 import Home from './components/Home/Home.vue';
 
